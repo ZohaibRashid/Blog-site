@@ -3,13 +3,17 @@
 <h1>Compose</h1>
 
 <form action="/compose" method = "POST">
+
+<div class = "row">
+<div class = "form-group col-md-10">
  <label for="postTitle">Title:</label>
- <input type="text" name = "title" id = "postTitle"/>
- <br>
- <br>
- <label for="content">Content:</label>
- <textarea  name = "content" id = "content" rows = "5" cols = "40"> </textarea>
- <button type = "submit">Publish</button>
+ <input type="text" name = "title" class = "form-control" id = "postTitle"/>
+ <label for="content">Post:</label>
+ <textarea  name = "content" id = "content" class = "form-control" rows = "5" cols = "30"></textarea>
+</div>
+</div>
+
+ <button type = "submit" class = "btn btn-primary">Publish</button>
 
 </form>
 
