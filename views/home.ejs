@@ -7,13 +7,10 @@
 
 <% for(var i = 0; i <postsList.length; i++) { %>
  <h2 class = "post-title"><%=postsList[i].title%></h2>
-
-<p class = "post-body"><%= postsList[i].content%></p>
+<% let postBody = (postsList[i].content).substring(0,100) + "..."; %>
+<p class = "post-body"><%= postBody%> <a href="/posts/<%= postsList[i].title %>">read more</a></p>
 
 <% } %>
-
-
-
 
 <%- include("partials/footer") -%>
 
